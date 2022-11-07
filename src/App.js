@@ -2,14 +2,16 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import "./sass/main.scss";
+import Portfolio from "./Components/Portfolio/Portfolio";
+import Studio from "./Components/Studio/Studio";
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/studio" element={<h1>Studio</h1>}></Route>
-          <Route path="/portfolio" element={<h1>Portfolio</h1>} />
+          <Route path="/studio" element={<Studio />}></Route>
+          <Route path="/portfolio" element={<Portfolio />} />
         </Route>
       </Routes>
     </div>
