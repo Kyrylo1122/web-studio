@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Studio />} />
+          <Route path={`${HeaderNavNames.STUDIO}`} element={<Studio />} />
           <Route path={`${HeaderNavNames.PORTFOLIO}`} element={<Portfolio />} />
         </Route>
       </Routes>
