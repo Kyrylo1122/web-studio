@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/web-studio/static/css/main.073c9b0a.css",
+    "main.js": "/web-studio/static/js/main.139ab261.js",
+    "index.html": "/web-studio/index.html",
+    "main.073c9b0a.css.map": "/web-studio/static/css/main.073c9b0a.css.map",
+    "main.139ab261.js.map": "/web-studio/static/js/main.139ab261.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.139ab261.js"
+  ]
+}
