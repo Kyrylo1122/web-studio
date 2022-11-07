@@ -1,0 +1,34 @@
+.footer-address {
+  color: white;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+
+    margin-bottom: 9px;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color var(--animation-duration) var(--cubic-bezier);
+
+    color: var(--third-text-color);
+  }
+  &__link:focus,
+  &__link:hover {
+    color: var(--accent-color);
+  }
+}

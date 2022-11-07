@@ -1,0 +1,24 @@
+.social-fullName {
+  display: flex;
+  margin-top: 64px;
+  &__item {
+    margin-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+  &__link {
+    padding-right: 10px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+  }
+}

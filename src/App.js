@@ -1,8 +1,8 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import Layout from "./Layout/Layout";
-import { HeaderNavNames } from "./Layout/HeaderNavNames";
-import Portfolio from "./Portfolio/Portfolio";
+import Layout from "./Components/Layout/Layout";
+import { HeaderNavNames } from "./Components/AppBar/HeaderNavNames";
+import Portfolio from "./Components/Portfolio/Portfolio";
 
 function App() {
   return (
