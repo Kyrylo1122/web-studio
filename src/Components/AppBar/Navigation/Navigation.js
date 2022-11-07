@@ -15,8 +15,7 @@ export default function Navigation({ closeMenu }) {
           return (
             <li key={id} className="navigation__item">
               <NavLink
-                to={`/${text}`}
-                end
+                to="studio"
                 className="navigation__link"
                 onClick={() => closeMenu()}
               >
