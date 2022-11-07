@@ -1,0 +1,56 @@
+.about {
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: -15px;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    margin: 15px;
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc(100% / 4 - 30px);
+    }
+  }
+}
+
+.about-card {
+  padding: 25px 0;
+  background: var(--fourth-background-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--first-text-color);
+
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
+}

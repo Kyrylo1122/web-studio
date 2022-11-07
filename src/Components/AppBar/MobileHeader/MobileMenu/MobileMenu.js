@@ -1,8 +1,8 @@
 import { ImCross } from "react-icons/im";
-import NavigationList from "../../Navigation/NavigatinList/NavigationList";
 import MobileContacts from "../MobileContacts/MobileContacts";
 import "./_MobileMenu.scss";
 import SocialsFullName from "../../../Socials/SocialsFullName/SocialsFullName";
+import Navigation from "../../Navigation/Navigation";
 
 export default function MobileMenu({ closeMenu }) {
   return (
@@ -17,7 +17,7 @@ export default function MobileMenu({ closeMenu }) {
         >
           <ImCross />
         </button>
-        <NavigationList closeMenu={closeMenu} />
+        <Navigation closeMenu={closeMenu} />
       </div>
       <div className="mob-menu--bottom">
         <SocialsFullName />
