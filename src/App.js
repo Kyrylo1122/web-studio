@@ -2,6 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import { HeaderNavNames } from "./Layout/HeaderNavNames";
+import Portfolio from "./Portfolio/Portfolio";
 
 function App() {
   return (
@@ -12,10 +13,7 @@ function App() {
             path={`${HeaderNavNames.STUDIO}`}
             element={<h1>Studio</h1>}
           ></Route>
-          <Route
-            path={`${HeaderNavNames.PORTFOLIO}`}
-            element={<h1>Portfolio</h1>}
-          />
+          <Route path={`${HeaderNavNames.PORTFOLIO}`} element={<Portfolio />} />
         </Route>
       </Routes>
     </div>

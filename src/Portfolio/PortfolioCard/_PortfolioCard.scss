@@ -1,0 +1,50 @@
+.portfolio-card {
+  &__container {
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 -30px);
+    }
+  }
+
+  &__description {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    background-color: var(--card-description-background-color);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--first-text-color);
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
+}
+
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+  &__text {
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: var(--white-text-color);
+    &--container {
+      height: 100%;
+      position: absolute;
+      background-color: var(--accent-color);
+      transform: translateY(0%);
+      transition: transform var(--animation-duration) var(--cubic-bezier);
+    }
+  }
+  .card-set__item:hover &__text--container {
+    transform: translateY(-100%);
+  }
+}
