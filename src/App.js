@@ -2,7 +2,6 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import "./sass/main.scss";
-import Studio from "./Components/Studio/Studio";
 
 function App() {
   return (
