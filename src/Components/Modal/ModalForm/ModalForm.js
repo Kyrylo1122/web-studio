@@ -14,8 +14,9 @@ export default function ModalForm({ closeModal }) {
     <Formik
       initialValues={{ name: "", tel: "", email: "" }}
       onSubmit={(value, actions) => {
-        actions.resetForm();
         toast(`Мы вам перезвоним ${value.name}`);
+        actions.resetForm();
+
         closeModal();
       }}
     >

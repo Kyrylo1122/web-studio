@@ -32,6 +32,7 @@
     letter-spacing: 0.02em;
 
     color: var(--first-text-color);
+    text-transform: capitalize;
 
     @media screen and (min-width: 768px) {
       padding-top: 32px;
