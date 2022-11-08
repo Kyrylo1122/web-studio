@@ -15,7 +15,7 @@ export default function Navigation({ closeMenu }) {
           return (
             <li key={id} className="navigation__item">
               <NavLink
-                to={`${text}`}
+                to={text === HeaderNavNames.STUDIO ? "/" : `${text}`}
                 className="navigation__link"
                 onClick={() => closeMenu()}
               >
@@ -24,7 +24,7 @@ export default function Navigation({ closeMenu }) {
             </li>
           );
         })}
-      </ul>{" "}
+      </ul>
     </nav>
   );
 }
