@@ -1,6 +1,6 @@
 {
-  "homepage": "https://kyrylo1122.github.io/web-studio/",
-  "name": "web-studio",
+  "homepage": "https://kyrylo1122.github.io/react-webstudio/",
+  "name": "react-webstudio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
